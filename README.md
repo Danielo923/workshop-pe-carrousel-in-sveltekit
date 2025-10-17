@@ -1,13 +1,38 @@
+# sv
 
-# Workshop - PE Carrousel in SvelteKit
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-In deze workshop maak je een Carrousel in SvelteKit. De carrousel wordt opgebouwd volgens het principe van Progressive Enhancement.
+## Creating a project
 
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/workshop-pe-carrousel-in-sveltekit/blob/main/docs/INSTRUCTIONS.md)
+If you're seeing this, you've probably already done this step. Congrats!
 
+```sh
+# create a new project in the current directory
+npx sv create
 
-## Licentie
+# create a new project in my-app
+npx sv create my-app
+```
 
-This project is licensed under the terms of the [MIT license](./LICENCE).
+## Developing
 
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
